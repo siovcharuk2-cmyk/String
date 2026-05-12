@@ -37,6 +37,11 @@ public:
 		count--;
 	}
 
+	// operator overloading
+	char operator[](int index);
+	int operator()(char symbol);
+	operator int();
+
 	// methods
 	static int getCount();
 	void input();

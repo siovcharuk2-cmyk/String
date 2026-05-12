@@ -3,6 +3,30 @@
 
 int String::count = 0;
 
+
+char String::operator[](int index)
+{
+    if (index >= 0 && index <= strlen(string))
+        return string[index];
+    return '\0';
+}
+
+int String::operator()(char symbol)
+{
+    for (int i = 0; i < size; i++)
+    {
+        if (string[i] == symbol)
+            return i;
+    }
+    return -1;
+}
+
+String::operator int()
+{
+    return (int)strlen(string);
+}
+
+
 int String::getCount()
 {
     return count;

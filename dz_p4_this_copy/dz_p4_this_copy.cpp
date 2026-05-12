@@ -17,5 +17,14 @@ int main()
     String str3{ "Hello world!!!" };
     str3.print();
 
+    std::cout << "\n===== [4] =====\n";
+    std::cout << str3[4] << std::endl;
+
+    std::cout << "\n===== (r) =====\n";
+    std::cout << str3('r') << std::endl;
+
+    std::cout << "\n===== (int) =====\n";
+    std::cout << (int)str3 << std::endl;
+
     std::cout << "\nNumber of strings: " << String::getCount() << std::endl;
 }
