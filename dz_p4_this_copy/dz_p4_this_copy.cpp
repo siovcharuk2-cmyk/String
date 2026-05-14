@@ -26,5 +26,9 @@ int main()
     std::cout << "\n===== (int) =====\n";
     std::cout << (int)str3 << std::endl;
 
+    std::cout << "\n===== str1 * str2 =====\n";
+    (str1 * str2).print();
+    std::cout << std::endl;
+
     std::cout << "\nNumber of strings: " << String::getCount() << std::endl;
 }

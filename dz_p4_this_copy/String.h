@@ -41,6 +41,7 @@ public:
 	char operator[](int index);
 	int operator()(char symbol);
 	operator int();
+	String operator*(const String& s2);
 
 	// methods
 	static int getCount();
